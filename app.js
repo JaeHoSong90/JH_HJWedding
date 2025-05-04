@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const doneBtn = document.createElement("button");
       doneBtn.textContent = "완료";
       doneBtn.addEventListener("click", function () {
-        li.classList.toggle("done");
+        li.classList.toggle("doge");
       });
   
       const deleteBtn = document.createElement("button");
