@@ -1,0 +1,7 @@
+git init
+cd C:\GitProject
+git remote add origin https://github.com/JaeHoSong90/GithubBasic
+git clone https://github.com/JaeHoSong90/GithubBasic.git
+
+git config --global user.name "https://github.com/JaeHoSong90"
+git config --global user.email "kpuni@naver.com"
