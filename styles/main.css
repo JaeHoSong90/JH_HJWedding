@@ -1,0 +1,58 @@
+.ww-home-page {
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/main-background.jpg") no-repeat center center;
+    background-size: cover;
+    background-position: 50%;
+    height: 95vh;
+    min-height: 460px;
+}
+
+.ww-home-page .ww-wedding-announcement {
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    height: 140%;
+    text-align: center;
+    color: #fff;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+    letter-spacing: 2px;
+}
+
+.ww-home-page .ww-wedding-announcement .ww-announcement-container {
+    max-width: 600px;
+    text-align: center;
+    z-index: 999;
+}
+
+.ww-home-page .ww-wedding-announcement img {
+    max-height: 350px;
+    width: auto;
+}
+
+@media (max-width: 480px) {
+    .ww-home-page .ww-wedding-announcement img {
+        max-height: 250px;
+        width: auto;
+    }
+}
+
+.ww-home-page .ww-wedding-announcement .ww-couple-name {
+    font-size: 70px;
+}
+
+@media (max-width: 576px) {
+    .ww-home-page .ww-wedding-announcement .ww-couple-name {
+        font-size: 50px;
+    }
+}
+
+.ww-home-page:before {
+    content: "";
+    background-color: rgba(245, 138, 119, 0.2);
+    width: 100%;
+    height: 100%;
+    height: 100vh;
+    min-height: 480px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
