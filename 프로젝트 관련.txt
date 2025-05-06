@@ -1,3 +1,7 @@
+깃허브및 기본
+
+기본 https://jaehosong90.github.io/JH_HJWedding/ 
+
 git init
 cd C:\GitProject
 git remote add origin https://github.com/JaeHoSong90/GithubBasic
