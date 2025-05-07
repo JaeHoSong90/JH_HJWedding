@@ -1,11 +1,21 @@
 let currentIndex = 0;
 const slides = document.querySelectorAll('.slide');
 const totalSlides = slides.length;
+console.log(totalSlides);
 
 function showSlide(index) {
     slides[currentIndex].classList.remove('active');
+    console.log(currentIndex);
     currentIndex = (index + totalSlides) % totalSlides;
+    slides[currentIndex].style.width = '50vw';
+    // slides[currentIndex].style.height = '50vw';
+
     slides[currentIndex].classList.add('active');
+    console.log(slides[currentIndex]);
+    
+    console.log(slides[currentIndex].clientWidth);
+    console.log(slides[currentIndex].clientHeight);
+    
 }
 
 function nextSlide() {

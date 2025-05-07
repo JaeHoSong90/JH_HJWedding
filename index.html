@@ -13,57 +13,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
   <link href="styles/main.css" rel="stylesheet">
 
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Nanum Myeongjo', serif;
-      background-color: #fffaf7;
-      color: #333;
-      text-align: center;
-    }
-
-    header {
-      padding: 20px;
-    }
-
-    .main-photo {
-      width: 100%;
-      max-height: 600px;
-      object-fit: cover;
-    }
-
-    h1 {
-      font-size: 2rem;
-      margin: 10px 0;
-    }
-
-    .names {
-      font-size: 1.2rem;
-      margin-bottom: 30px;
-    }
-
-    section {
-      padding: 30px 20px;
-    }
-
-    .photo-section img {
-      width: 90%;
-      margin: 10px 0;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    }
-
-    .info {
-      font-size: 1rem;
-      line-height: 1.5;
-    }
-
-    footer {
-      padding: 20px;
-      font-size: 0.9rem;
-      color: #777;
-    }
-  </style>
 
 </head>
 
@@ -101,7 +50,7 @@
 
   <div class="ww-section" id="couple">
     <div class="container">
-      <h2 class="h1 text-center pb-3 ww-title" style="font-family: 'Noto Serif KR', serif;">신랑 & 신부</h2>
+      <h2 class="h1 text-center pb-3 ww-title" style="font-family: 'Noto Serif KR', serif;"></h2>
       <div class="row text-center">
         <div class="col-md-6">
           <div class="mt-3">
@@ -123,7 +72,7 @@
 
   <div class="slider">
     <h3 class="h2 ww-title" style="font-family: 'Sunflower', sans-serif; font-size:1.5em">현정이와 재호의 소중한 순간을 담은</h3>
-    <div class="slides" id="slides">
+    <div class="slides" id="slides" >
       <div class="slide"><img src="images/photo1.jpg" alt="Slide 1"></div>
       <div class="slide"><img src="images/photo2.jpg" alt="Slide 2"></div>
       <div class="slide"><img src="images/photo3.png" alt="Slide 3"></div>
@@ -180,27 +129,28 @@
       </div>
     </div>
 
+</section>
 
+    
+    <div id="map" class="map_image" style="width:70%; height:350px;">
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=a8db2109213d20bf2bcb58fcb655f7e3&libraries=services"></script>
+    </div>
     <!-- <div id="map" style="width: 100%; height: 400px;"></div>
       <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=여기에_자신의_키_입력&autoload=false"></script>
     </div> -->
-
-    <iframe src="https://naver.me/5chuCtRo" width="100%" height="400" frameborder="0"
-      style="border:0; width: 100%; height: auto;" allowfullscreen="">
-      </div>
-    </iframe>
-
-    <iframe src="https://naver.me/5chuCtRo" width="100%" height="400" frameborder="0" style="border:0"
+    <!-- <iframe src="https://naver.me/5chuCtRo" width="100%" height="400" frameborder="0" style="border:0"
       allowfullscreen="" loading="lazy">
       </div>
-    </iframe>
-  </section>
-
+    </iframe> -->
+  
   <footer>
     © 2025 김현정 신부 & 송재호 신랑. All rights reserved.
   </footer>
   <script src="script.js"></script>
-  <!-- <script src="map.js"></script> -->
+  <script defer src="map.js"></script>
+  <script src="effect.js"></script>
+
+
 </body>
 
 </html>
