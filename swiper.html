@@ -4,29 +4,39 @@
 <head>
 
 
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>화면 슬라이드</title>
-  <link href="styles/swiper.css" rel="stylesheet">
-  </head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>화면 슬라이드</title>
+    <link href="styles/swiper.css" rel="stylesheet">
+</head>
 
-<body style="margin:0"> 
+<body>
+    <div class="slider-container">
+        <button class="nav prev">&#10094;</button>
+        <div class="slider">
+            <img src="images/photo1.jpg" class="slide" />
+            <img src="images/photo2.jpg" class="slide" />
+            <img src="images/photo3.png" class="slide" />
+            <img src="images/photo4.jpg" class="slide" />
+            <img src="images/photo5.jpg" class="slide" />
+            <img src="images/photo6.jpg" class="slide" />
 
+        </div>
+        <button class="nav next">&#10095;</button>
 
-      <div class="slider">
-    <div class="slides" id="slides" >
-      <div class="slide"><img src="images/photo1.jpg" alt="Slide 1"></div>
-      <div class="slide"><img src="images/photo2.jpg" alt="Slide 2"></div>
-      <div class="slide"><img src="images/photo3.png" alt="Slide 3"></div>
-      <div class="slide"><img src="images/photo4.jpg" alt="Slide 4"></div>
-      <div class="slide"><img src="images/photo5.jpg" alt="Slide 5"></div>
+        <div class="dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
     </div>
-    </div>
-  </div>
+    <script src="swiper.js"></script>
 
 
 
-  
     <!-- <div style="overflow: hidden">
     
         <div class="container">
@@ -53,6 +63,6 @@
         </div>
     </div>
     </div> -->
-    </body>
+</body>
 
 </html>
