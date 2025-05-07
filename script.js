@@ -82,4 +82,4 @@ function resetAutoSlide() {
 }
 
 showSlide(currentSlide);
-startAutoSlide();
+// startAutoSlide();
