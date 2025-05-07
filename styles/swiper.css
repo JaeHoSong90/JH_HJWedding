@@ -13,7 +13,22 @@
 .slide {
   min-width: 100%;
   transition: opacity 0.5s ease;
+  border-radius: 16px;
+  /* ← 둥근 정도 조절 (예: 8px, 12px, 50% 등) */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  /* (선택) 약간의 그림자 효과 */
   display: none;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 16px;
+
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  /* (선택) 약간의 그림자 효과 */
+
 }
 
 .slide.active {

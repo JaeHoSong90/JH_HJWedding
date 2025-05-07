@@ -6,6 +6,7 @@
  */
 
 
+
 @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static.min.css');
 
 
@@ -84,9 +85,10 @@ body {
     color: #212529;
     text-align: left;
     /* background-color: #fff; */
-    background-color: #fdf6f0;
+    background-color: #f1e3ee;
 
-    /* padding: 20px; */
+    /* padding: 0 5vw; */
+    /* 뷰포트 너비 기준 여백 */
 }
 
 
