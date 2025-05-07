@@ -10441,11 +10441,11 @@ image-container {
     border-radius: 10px;
 }
 
-/* .slides {
+.slides {
     position: relative;
-    height: 1400px;
+    height: 1200px; 
     object-fit: contain;
-} */
+}
 
 .slide {
     position: absolute;
