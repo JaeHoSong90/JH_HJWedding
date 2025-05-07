@@ -1,5 +1,9 @@
 깃허브및 기본
 
+깃허브에서 가져올때
+git clone https://github.com/JaeHoSong90/JH_HJWedding
+
+
 기본 https://jaehosong90.github.io/JH_HJWedding/ 
 
 git init
