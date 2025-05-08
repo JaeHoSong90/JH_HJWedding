@@ -1,8 +1,16 @@
+function getValueInText() {
+  console.log("들어와짐");
+  const inputData = document.getElementById("test").value;
+  console.log(inputData);
+}
 const REST_API_KEY = "9f943b678ccb4d8cc21540039807e92b";
 
 // 주소를 좌표로 변환하는 함수
+
 async function getCoordsFromAddress(address) {
-  const url = `https://dapi.kakao.com/v2/local/search/address.json?query=${encodeURIComponent(address)}`;
+  const url = `https://dapi.kakao.com/v2/local/search/address.json?query=${encodeURIComponent(
+    address
+  )}`;
 
   const response = await fetch(url, {
     headers: {
