@@ -1,151 +1,73 @@
 .slider-container {
-
   position: relative;
-
-  width: 100%;
-
-  /* width: 800px; */
-
+  width: 100%; /* width: 800px; */
   margin: auto;
-
   overflow: hidden;
-
 }
 
-
-
 .slider {
-
   display: flex;
   width: 100%;
   transition: transform 0.5s ease-in-out;
-
 }
-
-
 
 .slide {
-
-  min-width: 70%;
-
+  max-width: 300vw;
+  min-width: 60%;
+  text-align: center;
   transition: opacity 0.5s ease;
-
-  border-radius: 16px;
-
-  /* ← 둥근 정도 조절 (예: 8px, 12px, 50% 등) */
-
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-
-  /* (선택) 약간의 그림자 효과 */
-
+  border-radius: 16px; /* ← 둥근 정도 조절 (예: 8px, 12px, 50% 등) */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* (선택) 약간의 그림자 효과 */
+  margin: auto;
   display: none;
-
 }
-
-
 
 .slide img {
-
   width: 100%;
-
   height: auto;
-
   display: block;
-
   border-radius: 16px;
-
-
-
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-
-  /* (선택) 약간의 그림자 효과 */
-
-
-
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* (선택) 약간의 그림자 효과 */
 }
-
-
 
 .slide.active {
-
   display: block;
-
 }
-
-
 
 .nav {
-
   position: absolute;
-
   top: 50%;
-
   transform: translateY(-50%);
-
   background-color: rgba(255, 255, 255, 0.7);
-
   border: none;
-
   font-size: 2rem;
-
   cursor: pointer;
-
   padding: 0 10px;
-
   z-index: 10;
-
 }
-
-
 
 .prev {
-
   left: 20px;
-
 }
-
-
 
 .next {
-
   right: 20px;
-
 }
-
-
 
 .dots {
-
   display: flex;
-
   justify-content: center;
-
   margin-top: 15px;
-
 }
-
-
 
 .dot {
-
   height: 10px;
-
   width: 30px;
-
-  background-color: #ccc;
-
+  background-color: #cccccc;
   margin: 0 4px;
-
   transition: background-color 0.3s;
-
   border-radius: 2px;
-
 }
-
-
-
 .dot.active {
-
   background-color: #333;
-
 }
