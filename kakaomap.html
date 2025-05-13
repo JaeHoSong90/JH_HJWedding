@@ -1,56 +1,72 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <title>Page Title</title>
+  <link href="styles/swiper.css" rel="stylesheet">
+  <link href="styles/main.css" rel="stylesheet">
 </head>
+
 <body>
- 
   <div>
-    <input type="text" Id="test">
-  </div> 
+    <div class="slider-container">
+      <div class="slider" style="padding: 0 10vw">
+        <img src="images/photo1.jpg" class="slide2" />
+        <img src="images/photo2.jpg" class="slide2" />
+        <img src="images/photo3.jpg" class="slide2" />
+        <img src="images/photo4.jpg" class="slide2" />
+        <img src="images/photo5.jpg" class="slide2" />
+        <img src="images/photo6.jpg" class="slide2" />
+        <img src="images/photo7.jpg" class="slide2" />
+        <img src="images/photo8.jpg" class="slide2" />
+      </div>
+    </div>
+  </div>
+
+
+  <div>
+    <input type="text" Id="찾을주소">
+    <input type="button" value="입력" onclick="getValueInText()">
+  </div>
+  <div>
+    <input type="text" value="경도: " Id="경도">
+
+  </div>
   <div>
     <input type="text" value="위도: " Id="위도">
   </div>
-  <div>
-<input type="text" Id="경도">
-  </div>
- 
-  
-  
-  <input type="button" value="send" onclick="getValueInText()">
+
+
+
+
   <div id="map" style="width: 500px; height: 400px"></div>
+  <script type="text/javascript"
+    src="//dapi.kakao.com/v2/maps/sdk.js?appkey=a8db2109213d20bf2bcb58fcb655f7e3&libraries"></script>
+  <!-- <script>
+    const container = document.getElementById("map");
+    const options = {
+      center: new kakao.maps.LatLng(37.5031203672024, 126.886928197239), // 서울 시청 좌표
+      level: 3,
+    };
 
-<script
-  type="text/javascript"
-  src="//dapi.kakao.com/v2/maps/sdk.js?appkey=a8db2109213d20bf2bcb58fcb655f7e3&libraries"
+    const map = new kakao.maps.Map(container, options);
 
-></script>
-<script>
-  const container = document.getElementById("map");
-  const options = {
-    center: new kakao.maps.LatLng(37.5031203672024, 126.886928197239), // 서울 시청 좌표
-    level: 3,
-  };
+    kakao.maps.event.addListener(map, "click", function (mouseEvent) {
+      const latlng = mouseEvent.latLng;
+      const longitude = latlng.getLng();
+      const latitude = latlng.getLat();
+      console.log("경도:", longitude);
+      console.log("위도:", latitude);
+    });
+  </script> -->
 
-  const map = new kakao.maps.Map(container, options);
-
-  kakao.maps.event.addListener(map, "click", function (mouseEvent) {
-    const latlng = mouseEvent.latLng;
-    const longitude = latlng.getLng();
-    const latitude = latlng.getLat();
-    console.log("경도:", longitude);
-    console.log("위도:", latitude);
-  });
-</script>
-
-<script src="js/kakaomap.js"></script>
+  <!-- <script src="js/script.js"></script> -->
+  <script src="js/practice.js"></script>
+  <script src="js/kakaomap.js"></script>
 </body>
-</html>
 
 </html>
 
-
+</html>

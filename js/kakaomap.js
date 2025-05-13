@@ -1,12 +1,5 @@
-function getValueInText() {
-  console.log("들어와짐");
-  const inputData = document.getElementById("test").value;
-  console.log(inputData);
-}
+// 자바 스크립트에서 주소입력하고 경도,위도 가져오는 코드=======================================================================
 const REST_API_KEY = "9f943b678ccb4d8cc21540039807e92b";
-
-// 주소를 좌표로 변환하는 함수
-
 async function getCoordsFromAddress(address) {
   const url = `https://dapi.kakao.com/v2/local/search/address.json?query=${encodeURIComponent(
     address
@@ -30,5 +23,34 @@ async function getCoordsFromAddress(address) {
   }
 }
 
-// 사용 예시
-getCoordsFromAddress("서울특별시 구로구 구로5동 552-83");
+
+function getValueInText() {
+  const inputData = document.getElementById("찾을주소");
+  getCoordsFromAddress(inputData.value)
+    .then(({ longitude, latitude }) => {
+      inputData.value = `${inputData.value}경도, 위도 가져오기 성공`;
+      document.getElementById("경도").value = `경도: ${longitude}`;
+      document.getElementById("위도").value = `위도: ${latitude}`;
+    })
+    .catch((error) => {
+      console.error(error.message);
+    })
+}
+
+
+// 자바 스크립트에서 주소입력하고 경도,위도 가져오는 코드=======================================================================
+const container = document.getElementById("map");
+const options = {
+  center: new kakao.maps.LatLng(37.5031203672024, 126.886928197239), // 서울 시청 좌표
+  level: 3,
+};
+
+const map = new kakao.maps.Map(container, options);
+
+kakao.maps.event.addListener(map, "click", function (mouseEvent) {
+  const latlng = mouseEvent.latLng;
+  const longitude = latlng.getLng();
+  const latitude = latlng.getLat();
+  document.getElementById("경도").value = `경도: ${longitude}`;
+  document.getElementById("위도").value = `위도: ${latitude}`;
+});
